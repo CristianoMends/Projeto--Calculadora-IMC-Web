@@ -1,0 +1,37 @@
+.title{
+    text-align: center;
+    height: 40px;
+    width: 80%;
+    position: relative;
+    top: 20px;
+    left: 120px
+
+}
+
+.formArea{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.components{
+    width: 250px;
+    position: relative;
+    top: 30px;
+    text-align: right;
+}
+.btnCalc{
+    position: relative;
+    right: 65px;
+}
+label{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
