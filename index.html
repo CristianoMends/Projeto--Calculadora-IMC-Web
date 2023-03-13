@@ -1,33 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype: html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC by Cristiano</title>
-    <link rel="stylesheet" href="Styles/style.css">
-</head>
+<link rel="stylesheet" href="styles/style.css">
+  <script src="Js/app.js"></script> 
+<head>
 <body>
-
-    <div class="title">
-        <h1>Calculadora de IMC</h1>
-    </div>
-    <div class="formArea">
-        <div class="components">
-            <label for="">Idade</label>
-            <input type="number"id="txtAge" placeholder="anos"><br>
-            <br>
-            <label for="">Altura</label>
-            <input type="number" id="txtHeigth" placeholder="metros"><br>
-            <br>
-            <label for="txtWeight">Peso</label>
-            <input type="number" id="txtWeight" placeholder="kilos"><br>
-            <br>
-            <button id="btnCalc" class="btnCalc" onclick="calc()">Calcular</button>
-        </div>
-        
-    </div>
-
-    <script src="Js/app.js"></script>
+  <header>
+    <section class="container1">
+      <h1>Calculadora de IMC</h1>
+    </section>
+    <br>
+  </header>
+    <main>
+      <section class="container2">
+        <form action="" method="post"></form>
+          <Label>Sexo</Label><br>
+          <label for="m">Masculino</label>
+          <input type="radio"  name="sexo" id="m" value="Masculino">
+          <label for="f">Femenino</label>           
+          <input type="radio" name="sexo" id="f" value="Femenino"><br>
+          <label for="idade">Idade</label><br>
+          <input type="number" id="idade" placeholder="Ex: 18"><label>Anos</label>
+          <br>
+          <label for="peso">Peso</label><br>
+          <input type="number" pattern="[0-9]+([,\.][0-9]+)?" id="peso"  placeholder="Ex: 75.5">
+          <label for="peso">Kg</label>
+          <br>
+          <label for="altura">Altura</label><br>
+          <input type="number" pattern="[0-9]+([,\.][0-9]+)?" step="any"  id="altura" placeholder="Ex: 1.60">
+          <label>M</label>
+          <br>
+          <br>
+          <button onclick="calc()">Calcular</button>
+        </form>
+      </section>
+    </main>
+  <footer class="container3">
+    <section class="container4">
+        by ©Cristiano Mendes
+    </section>
+   
+  </footer>
 </body>
 </html>
