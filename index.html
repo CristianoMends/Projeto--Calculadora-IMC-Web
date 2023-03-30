@@ -20,9 +20,10 @@
     <main>
 
       <p>Insira seus dados na calculadora:</p>
+      <div class="containers">
       <section class="container">
         <div class="form">
-          <form action="index.html" method="post">
+          <form action="" method="dialog">
             <div class="gender">
               <label>Sexo</label>
               <div class="radio">
@@ -38,19 +39,25 @@
             </div>
             <div class="height">
               <label>Altura</label>
-              <input type="number" id="height" placeholder="Metros" min="1" step="any">
+              <input type="number" required title="Preencha o campo altura!" id="height" placeholder="Metros" min="1" step="any">
             </div>
             <div class="weight">
               <label>Peso</label>
-              <input type="number" id="weight" placeholder="Kilos" min="1" max="250">
+              <input type="number" required id="weight" placeholder="Kilos" min="1" max="250">
             </div>
         </div>
         <div class="calculate">
-          <button onclick="calculate()">Calcular</button>
-          <div id="load"></div>
+          <button onclick="calculateImc()">Calcular</button>
         </div>
         </form>
       </section>
+      <section id="result">
+        <figure id="resultImg">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnXJE9x4QGrwoUZ8f51NTujn0AT2jXZik64Q&usqp=CAU" alt="imagem">
+        </figure>
+        <figcaption id="captionImg"></figcaption>
+      </section>
+    </div>
     </main>
     <footer>
       <p>&copy;2023 Cristiano Mendes - Todos os direitos reservados</p>
