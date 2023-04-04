@@ -14,8 +14,12 @@ main{
   background-size: cover;
 }
 main p{
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-left: 5%;
+}
+#description{
+  text-align: center;
 }
 .containers{
   display: flex;
@@ -31,6 +35,7 @@ header{
 }
 
 .container{
+  height: 100%;
   width: 50%;
   max-width: 30rem;
   min-width: 16rem;
@@ -48,15 +53,25 @@ header{
   min-width: 16rem;
   width: 40%;
   display: none;
+  height: 30rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: top;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
 
   animation-name: resultImc;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+  img{
+    height: 200px;
+  }
+  .imc{
+    background-color: red;
+    border: 1px solid;
+    border-radius: 10%;
 
+  }
 .form{
   padding: 1rem;
 }
